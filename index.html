@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="boxOfficeApp" class="no-js">
+<html lang="en" ng-app="bookClubApp" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Angular Box Club</title>
+  <title>Angular Book Club</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootswatch/3.0.0/simplex/bootstrap.min.css"/>
@@ -13,9 +13,18 @@
 <body>
 
 <div class="container">
-   <!-- Add bootstrap navigation menu -->
-   <div class="col-md-12 text-center">Book Club</div>
-    <hr>
+   <!-- NAVIGATION --> 
+   <!-- Articles, Gallery, Subscribers -->
+   <nav class="navbar navbar-default navbar-fixed-top">
+     <div class="container">
+       <a class="navbar-brand" href="/">Book Club</a>
+       <ul class="nav navbar-nav">
+         <li><a href="/#/search">Search Books</a></li>
+         <li><a href="/#/read">Books I've Read</a></li>
+         <li><a href="/#/wishList">Wish List</a></li>
+       </ul>
+     </div>
+   </nav>
   <div ng-view></div>
 </div>
 

@@ -1,0 +1,12 @@
+body { 
+  padding-top: 65px; 
+  background-image: url('../img/bookWallpaper.jpg');
+	background-repeat: no-repeat;
+  background-position: right top;
+}
+
+.content-container {
+	background: white;
+	padding: 25px 50px;
+}
+

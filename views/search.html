@@ -23,7 +23,7 @@
     	</tr>
     </thead>
     <tbody>
-    	<tr ng-repeat="result in searchResults">
+    	<tr ng-repeat="result in searchResults" ng-click="getBookDetails(result.id)">
     	  <td>{{result.volumeInfo.title}}</td>
     	  <td>{{result.volumeInfo.authors[0]}}</td>	
     	  <td><button>Read</button></td>

@@ -5,8 +5,6 @@ function bookSearchFactory($http) {
   var bsf = {}
 
   bsf.getSearchResults = function(title, author) {
-  	console.log('title =', title);
-  	console.log('author=', author);
   	if ((typeof title === 'undefined' || title === "")  && (typeof author !== 'undefined' && author !== "")){
   		return $http.get('https://www.googleapis.com/books/v1/volumes?q=inauthor:' + author);
   	}
@@ -19,6 +17,10 @@ function bookSearchFactory($http) {
   	else {
   		return $http.get('https://www.googleapis.com/books/v1/volumes?q=""');
   	}
+  };
+
+  bsf.getSingleBookResult = function (id){
+  	return $http.get('https://www.googleapis.com/books/v1/volumes/' + id);
   };
 
   return bsf;

@@ -1,4 +1,4 @@
-var app = angular.module('bookClubApp', ['ngRoute']);
+var app = angular.module('bookClubApp', ['ngRoute', 'ui.bootstrap']);
 
 app.config(function ($routeProvider) {
   $routeProvider

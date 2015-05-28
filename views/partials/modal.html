@@ -1,0 +1,21 @@
+<div class="modal-header">
+    <h3 class="modal-title">Book Details</h3>
+</div>
+<div class="modal-body">
+    <img ng-src="{{book.imageLinks.smallThumbnail}}" alt="Book"/>
+    <br>
+    Title: {{book.volumeInfo.title}}
+    <br>
+    Author: {{book.volumeInfo.authors[0]}}
+    <br>
+    Description: {{book.description}}
+    <br>
+    Link: <a href="{{book.infoLink}}">Read More!</a>
+    <br>
+    <button class="btn" ng-click='addToWishList()'>Add to Wish List</button>
+    <button class="btn">Add to Read List</button>
+
+</div>
+<div class="modal-footer">
+    <button class="btn" ng-click="close()">Close</button>
+</div>

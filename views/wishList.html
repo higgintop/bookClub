@@ -1,6 +1,23 @@
 <div class="content-container">
   <h2>My Wish List</h2>
-  <ul>
-    <li ng-repeat="item in wishList">{{item.title}}</li>
-  <ul>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+      	<tr>
+      		<th>Title</th>
+      		<th>Author</th>
+      		<th>Add to Read List</th>
+      		<th>Remove</th>
+      	</tr>
+      </thead>
+      <tbody>
+      	<tr ng-repeat="item in wishList">
+      	  <td>{{item.title}}</td>
+      	  <td>{{item.author}}</td>	
+      	  <td><button class="btn">Read</button></td>
+      	  <td><button class="btn">Delete</button></td>
+      	</tr>
+      </tbody>
+    </table>
+  </div>
 </div>

@@ -13,23 +13,23 @@
 
 	<!-- Search Results go Here -->
 	<div class="table-responsive">
-  <table class="table">
-    <thead>
-    	<tr>
-    		<th>Title</th>
-    		<th>Author</th>
-    		<th>Add to Read List</th>
-    		<th>Add to Wish List</th>
-    	</tr>
-    </thead>
-    <tbody>
-    	<tr ng-repeat="result in searchResults" ng-click="getBookDetails(result.id)">
-    	  <td>{{result.volumeInfo.title}}</td>
-    	  <td>{{result.volumeInfo.authors[0]}}</td>	
-    	  <td><button>Read</button></td>
-    	  <td><button>Wish List</button></td>
-    	</tr>
-    </tbody>
-  </table>
-</div>
+      <table class="table">
+        <thead>
+        	<tr>
+        		<th>Title</th>
+        		<th>Author</th>
+        		<th>Add to Read List</th>
+        		<th>Add to Wish List</th>
+        	</tr>
+        </thead>
+        <tbody>
+        	<tr ng-repeat="result in searchResults" ng-click="getBookDetails(result.id)">
+        	  <td>{{result.volumeInfo.title}}</td>
+        	  <td>{{result.volumeInfo.authors[0]}}</td>	
+        	  <td><button>Read</button></td>
+        	  <td><button>Wish List</button></td>
+        	</tr>
+        </tbody>
+      </table>
+    </div>
 </div>
